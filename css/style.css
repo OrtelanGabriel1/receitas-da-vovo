@@ -1,0 +1,68 @@
+:root{
+    --main-color: #C0392B;
+    --black: #13131a;
+    --bg:#FFF8F0;
+    --accent: #D4A373;
+    --border: 0.1rem solid #13131a;
+    font-size: 10px;
+
+}
+
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+body{
+background-color: var(--bg);
+}
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/* Pesquisar sobre POSITION dps */
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+}
+.logo img{height: 12rem;}
+.header section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: var(--black);
+}
+
+.navbar a:hover{
+    color: var(--accent);
+    border-bottom: 0.1rem solid var(--accent);
+    padding-bottom: 0.5rem;
+}
+.icons img{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+
+.icons img:hover{
+    width: 40px;
+    height: 40px;
+}
