@@ -114,3 +114,17 @@ section{
     line-height: 1.8;
     padding: 1rem 0;
 }
+
+.exemplo-comida{
+    border-radius: 80%;
+    width: 15rem;
+    height: 15rem;
+}
+
+.receitas .box-container{
+    display: grid;
+}
+
+.card {
+    border: #13131a 1rem solid;
+}
