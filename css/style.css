@@ -3,7 +3,7 @@
     --black: #13131a;
     --bg:#FFF8F0;
     --accent: #D4A373;
-    --border: 0.1rem solid #13131a;
+    --border: 0.1rem solid #922B21;
     font-size: 10px;
 
 }
@@ -15,12 +15,13 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: 0.2s linear;
 }
 
 body{
 background-color: var(--bg);
+display: flex;
+justify-content: center;
 }
 section{
     padding: 3rem 2rem;
@@ -29,6 +30,7 @@ section{
 }
 /* Pesquisar sobre POSITION dps */
 .header {
+    background-color: var(--main-color);
     position:fixed;
     top:0;
     left:0;
@@ -65,4 +67,50 @@ section{
 .icons img:hover{
     width: 40px;
     height: 40px;
+}
+
+.btn{
+    background-color: var(--main-color);
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    border: var(--border);
+}
+
+.home-container{
+    background-color: var(--bg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.home-container img{
+    width: auto;
+    border-radius: 10%;
+    border: var(--border);
+}
+
+.home-container section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.content {
+    max-width: 60rem;
+}
+
+.content h3{
+    font-size: 6rem
+}
+
+.content p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
 }
